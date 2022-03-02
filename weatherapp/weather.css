@@ -1,0 +1,126 @@
+*,
+*::before,*::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body { margin: 0; padding: 0;font-family: Arial, Helvetica, sans-serif; }
+#map { position: absolute; top: 0; bottom: 0; width: 100% }
+.wrap{
+    width: min(90%,70.5rem);
+}
+.popup{
+    color: #212121;
+    background-color: #f1f1f1;
+    position: absolute;
+    width:23rem;
+    height: 14.875rem;
+    left: 130%;
+    padding:0.9375rem 1.25rem;
+    font-size:1.2em;
+    border-radius: 9px;
+    display: none;
+}
+.title{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.close{
+    border: none;
+    outline: none;
+    position: relative;
+    bottom: 9.375rem;
+    font-size: 2.2em;
+    left: 270px;
+    color: gray;
+}
+.sidebar {
+    transition: transform 1s;
+    z-index: 2;
+    width: min(27rem);
+    height: 100%;
+    top:.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.collapsed {
+    transform: translateX(-18.4375rem);
+}   
+.sidebar-content {
+    background: #212121;
+    border-radius: 10px;
+    position: absolute;
+    width: 27rem;
+    height: 42rem;
+    font-size: 1.2rem;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-toggle {
+    background: #212121;
+    border-radius: 10px;
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    top:18.125rem;
+    right: -1.9rem;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.sidebar-toggle:hover {
+    color: #0aa1cf;
+    cursor: pointer;
+}
+.form-group{
+    height: 0.5rem;
+    position:absolute;
+    top: 2.2rem;
+}
+#city{
+    margin-top: -1.3rem;
+    margin-left:2.7rem;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+}
+#search{
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 60px;
+    position: absolute;
+    top:-1.3rem;
+    left: 18.7rem;
+}
+#search:hover{
+    cursor: pointer;
+}
+.card-body{
+    background-color: #212121;
+    color: white;
+} 
+.col-md-5{
+    text-align: center;
+    line-height: 1.2rem;
+    width: 500px;
+}
+.hour{
+    font-size: 1rem;
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.threedaysweather{
+    margin-left: -0.8rem;
+}
+.current{
+    margin-left: -4rem;
+    margin-top: 1.2rem;
+}
